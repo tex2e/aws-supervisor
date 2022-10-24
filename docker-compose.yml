@@ -2,7 +2,7 @@ version: '3'
 services:
   python3-server:
     build: .
-    container_name: python3-server
+    container_name: aws-manager-python3-server
     working_dir: /app
     tty: true
     volumes:
