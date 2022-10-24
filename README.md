@@ -5,8 +5,9 @@
 
 AWSコンソールで生成したアクセスキーをAWS CLIに設定する。
 ```bash
-pip install awscli
-aws configure
+% docker-compose up -d
+% docker-compose exec python3-server /bin/bash
+$ aws configure
 ```
 
 ### 開発者向け
@@ -15,7 +16,7 @@ aws configure
 
 ```bash
 docker-compose up -d
-docker-compose exec -T aws-manager-python3-server python src/stop_ec2.py
+docker-compose exec -T python3-server python src/stop_ec2.py
 ```
 
 ビルド（使用ライブラリの増加時のみ）
